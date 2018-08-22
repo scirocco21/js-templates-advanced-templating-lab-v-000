@@ -2,7 +2,9 @@
 function initForm() {
   // 1. write query to store HTML element 
   var formTemplate = document.getElementById("recipe-form-template").innerHTML
+  // compile element via handlebars
   var template = Handlebars.compile(formTemplate)
+  // set DOM node HTML equal to compiled template + any arguments that apply
   document.getElementsByTagName("main")[0].innerHTML = template({'submitAction': 'createRecipe()'})
 }
 
