@@ -40,7 +40,7 @@ function fetchRecipe() {
   var ingredients = []
   for(var i=0;i<ingredientsValues.length;i++) {
     if(ingredientsValues[i].value !== "") {
-      ingredients.push(ingredientsNodes[i].value)
+      ingredients.push(ingredientsValues[i].value)
     }
   }
   var name = document.getElementById("name").value
