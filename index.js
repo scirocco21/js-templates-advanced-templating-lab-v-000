@@ -48,7 +48,7 @@ function fetchRecipe() {
   var recipe = {
     name: name,
     description: description,
-    ingredients: ingredientsList
+    ingredients: ingredients
   }
   return(recipe)
 }
