@@ -38,7 +38,6 @@ function fetchRecipe() {
   // gather values from input form and store them
   var name = document.getElementById("name").value
   var description = document.getElementById("description").value
-  let ingredientNodes = document.getElementsByName("ingredients")
   // iterate over ingredients array to get values
   var ingredientsNodes = document.getElementsByName("ingredientsList")
   var ingredients = []
