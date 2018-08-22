@@ -42,8 +42,8 @@ function fetchRecipe() {
   // iterate over ingredients array to get values
   let ingredientsList = []
   for(ingredient of ingredientNodes) {
-    if(ingredientNodes[i].value !== "") {
-      ingredientsList.push(ingredientNodes[i].value)
+    if(ingredientNodes[ingredient].value !== "") {
+      ingredientsList.push(ingredientNodes[ingredient].value)
     }
   }
   // build recipe object with form values
