@@ -42,7 +42,9 @@ function fetchRecipe() {
   var ingredientsNodes = document.getElementsByName("ingredients")
   var ingredients = []
   for(var i=0;i<ingredientsNodes.length;i++) {
-    ingredients.push(ingredientsNodes[i].innerText)
+    if(ingredientsNodes[i].value !== "") {
+      ingredients.push(ingredientsNodes[i].value)
+    }
   }
   // build recipe object with form values
   var recipe = {
