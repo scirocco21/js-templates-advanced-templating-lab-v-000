@@ -1,4 +1,4 @@
-// set up basic form for create and edit display 
+// set up basic form
 function initForm() {
   var formTemplate = document.getElementById("recipe-form-template").innerHTML
   var template = Handlebars.compile(formTemplate)
