@@ -4,6 +4,7 @@ function initForm() {
   document.getElementsByTagName("main")[0].innerHTML = template({'submitAction': 'createRecipe()'})
 }
 
+// turns recipe object into HTMl and appends it to main
 function createRecipe() {
   var recipe = fetchRecipe()
   var recipeTemplate = document.getElementById("recipe-template").innerHTML
