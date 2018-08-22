@@ -1,6 +1,6 @@
 // set up basic form
 function initForm() {
-  // 1. write query to store HTML element 
+  // 1. write query to store HTML element
   var formTemplate = document.getElementById("recipe-form-template").innerHTML
   // compile element via handlebars
   var template = Handlebars.compile(formTemplate)
@@ -32,7 +32,7 @@ function displayEditForm() {
     ingredients.push(ingredientsNodes[i].innerText)
   }
 
-  var recipe = {name, description, ingredients, submitAction: 'createRecipe()'}
+  var recipe = {name, description, ingredients, submitAction: 'updateRecipe()'}
 
   var recipeFormTemplate = document.getElementById("recipe-form-template").innerHTML
   var template = Handlebars.compile(recipeFormTemplate)
