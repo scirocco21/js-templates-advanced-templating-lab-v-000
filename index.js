@@ -36,9 +36,9 @@ function displayEditForm() {
 
 function fetchRecipe() {
   // gather values from input form and store them
-  var ingredientValues = document.getElementsByName("ingredients")
+  var ingredientsValues = document.getElementsByName("ingredients")
   var ingredients = []
-  for(var i=0;i<ingredientValues.length;i++) {
+  for(var i=0;i<ingredientsValues.length;i++) {
     if(ingredientsValues[i].value !== "") {
       ingredients.push(ingredientsNodes[i].value)
     }
