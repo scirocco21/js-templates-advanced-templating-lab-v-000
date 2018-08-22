@@ -46,7 +46,12 @@ function fetchRecipe() {
       ingredients.push(ingredientNodes[i].value)
     }
   }
-  var recipe = {name, ingredients, description}
+  // build recipe object with form values
+  var recipe = {
+    name: name,
+    description: description,
+    ingredients: ingredientsList
+  }
   return(recipe)
 }
 
