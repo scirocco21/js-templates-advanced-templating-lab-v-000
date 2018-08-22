@@ -39,7 +39,7 @@ function fetchRecipe() {
   var name = document.getElementById("name").value
   var description = document.getElementById("description").value
   // iterate over ingredients array to get values
-  var ingredientsNodes = document.getElementsByName("ingredientsList")
+  var ingredientsNodes = document.getElementsByName("ingredients")
   var ingredients = []
   for(var i=0;i<ingredientsNodes.length;i++) {
     ingredients.push(ingredientsNodes[i].innerText)
