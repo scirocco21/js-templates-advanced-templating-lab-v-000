@@ -41,7 +41,7 @@ function fetchRecipe() {
   // iterate over ingredients array to get values
   var ingredientsNodes = document.getElementsByName("ingredients")
   var ingredients = []
-  for(var i=0;i<ingredientsNodes.length;i++) {
+  for(let ingredient of ingredientsNodes) {
     if(ingredientsNodes[i].value !== "") {
       ingredients.push(ingredientsNodes[i].value)
     }
